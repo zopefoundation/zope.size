@@ -18,13 +18,10 @@ $Id$
 
 import os
 
-try:
-    from setuptools import setup, Extension
-except ImportError, e:
-    from distutils.core import setup, Extension
+from setuptools import setup, find_packages
 
 setup(name='zope.size',
-      version='3.4-dev',
+      version='3.4dev',
       url='http://svn.zope.org/zope.size',
       license='ZPL 2.1',
       description='Zope size',
@@ -32,9 +29,7 @@ setup(name='zope.size',
       author_email='zope3-dev@zope.org',
       long_description="Interfaces and adapters that give the size of an object.",
 
-      packages=['zope',
-                'zope.size'],
-
+      packages=find_packages('src'),
       package_dir = {'': 'src'},
 
       namespace_packages=['zope',],
