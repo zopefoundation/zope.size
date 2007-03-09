@@ -34,7 +34,8 @@ setup(name='zope.size',
 
       namespace_packages=['zope',],
       tests_require = [],
-      install_requires=[],
+      install_requires=['zope.interface',
+                        'zope.i18nmessageid'],
       include_package_data = True,
 
       zip_safe = False,
