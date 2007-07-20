@@ -21,7 +21,7 @@ import os
 from setuptools import setup, find_packages
 
 setup(name='zope.size',
-      version = '3.4.0b1',
+      version = '3.4.0',
       url='http://svn.zope.org/zope.size',
       license='ZPL 2.1',
       description='Zope size',
@@ -31,12 +31,11 @@ setup(name='zope.size',
 
       packages=find_packages('src'),
       package_dir = {'': 'src'},
-
-      namespace_packages=['zope',],
+      namespace_packages=['zope'],
       tests_require = [],
-      install_requires=['zope.interface',
+      install_requires=['setuptools',
+                        'zope.interface',
                         'zope.i18nmessageid'],
       include_package_data = True,
-
       zip_safe = False,
       )
