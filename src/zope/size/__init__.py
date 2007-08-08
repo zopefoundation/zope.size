@@ -15,10 +15,13 @@
 
 $Id$
 """
+
 from zope.interface import implements
 from zope.size.interfaces import ISized
 from zope.i18nmessageid import MessageFactory
+
 _ = MessageFactory('zope')
+
 
 class DefaultSized(object):
     implements(ISized)
@@ -41,6 +44,7 @@ class DefaultSized(object):
         if units == 'byte':
             return byteDisplay(size)
         return _('not-available', 'n/a')
+
 
 def byteDisplay(size):
     if size == 0:
