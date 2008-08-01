@@ -21,12 +21,12 @@ import os
 from setuptools import setup, find_packages
 
 setup(name='zope.size',
-      version = '3.4.1',
+      version = '3.4.1dev',
       url='http://svn.zope.org/zope.size',
       license='ZPL 2.1',
       description='Zope size',
       author='Zope Corporation and Contributors',
-      author_email='zope3-dev@zope.org',
+      author_email='zope-dev@zope.org',
       long_description="Interfaces and adapters that give the size of an object.",
 
       packages=find_packages('src'),

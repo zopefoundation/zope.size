@@ -34,5 +34,7 @@ class ISized(Interface):
         same basic unit."""
 
     def sizeForDisplay():
-        """Returns a string giving the size.
+        """Returns a string giving the size. The output string may be a
+        zope.i18nmessageid.message.Message with an embedded mapping, so
+        it should be translated with zope.i18n.translate()
         """

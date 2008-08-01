@@ -1,0 +1,14 @@
+=======
+CHANGES
+=======
+
+3.4.1dev (unreleased)
+---------------------
+
+- Added docstrings
+
+3.4.0 (2006-09-29)
+------------------
+
+- First release as a separate egg
+
