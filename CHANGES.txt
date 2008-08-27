@@ -5,6 +5,8 @@ CHANGES
 3.4.1dev (unreleased)
 ---------------------
 
+- Added support to bootstrap on Jython.
+
 - Added docstrings
 
 3.4.0 (2006-09-29)
