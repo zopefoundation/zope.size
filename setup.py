@@ -21,7 +21,7 @@ import os
 from setuptools import setup, find_packages
 
 setup(name='zope.size',
-      version = '3.4.1dev',
+      version = '3.5.0dev',
       url='http://pypi.python.org/pypi/zope.size',
       license='ZPL 2.1',
       description='Interfaces and simple adapter that give the size of an object',
