@@ -24,11 +24,13 @@ setup(name='zope.size',
       version = '3.4.1dev',
       url='http://pypi.python.org/pypi/zope.size',
       license='ZPL 2.1',
-      description='Zope size',
+      description='Interfaces and simple adapter that give the size of an object',
       author='Zope Corporation and Contributors',
       author_email='zope-dev@zope.org',
-      long_description="Interfaces and adapters that give the size of an object.",
-
+      long_description=\
+          open('README.txt').read() + \
+          '\n\n' + \
+          open('CHANGES.txt').read(),
       packages=find_packages('src'),
       package_dir = {'': 'src'},
       namespace_packages=['zope'],

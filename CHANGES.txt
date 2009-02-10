@@ -9,6 +9,8 @@ CHANGES
 
 - Added docstrings
 
+- Beautify package's README and include CHANGES into the description.
+
 - Changed package's url to PyPI instead of Subversion.
 
 3.4.0 (2006-09-29)
