@@ -2,15 +2,16 @@
 CHANGES
 =======
 
-3.4.1dev (unreleased)
----------------------
+3.4.1 (unreleased)
+------------------
 
 - Added support to bootstrap on Jython.
 
 - Added docstrings
 
+- Changed package's url to PyPI instead of Subversion.
+
 3.4.0 (2006-09-29)
 ------------------
 
 - First release as a separate egg
-

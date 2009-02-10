@@ -22,7 +22,7 @@ from setuptools import setup, find_packages
 
 setup(name='zope.size',
       version = '3.4.1dev',
-      url='http://svn.zope.org/zope.size',
+      url='http://pypi.python.org/pypi/zope.size',
       license='ZPL 2.1',
       description='Zope size',
       author='Zope Corporation and Contributors',
