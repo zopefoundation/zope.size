@@ -12,8 +12,6 @@
 #
 ##############################################################################
 """Adapters that give the size of an object.
-
-$Id$
 """
 from zope.interface import implements
 from zope.size.interfaces import ISized

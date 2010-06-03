@@ -12,8 +12,6 @@
 #
 ##############################################################################
 """Interfaces that give the size of an object.
-
-$Id$
 """
 
 from zope.interface import Interface

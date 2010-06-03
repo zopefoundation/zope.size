@@ -12,8 +12,6 @@
 #
 ##############################################################################
 """Test ISized Adapter
-
-$Id$
 """
 import unittest
 from zope.size.interfaces import ISized
