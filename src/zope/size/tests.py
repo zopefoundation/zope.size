@@ -15,6 +15,33 @@
 """
 import unittest
 from zope.size.interfaces import ISized
+import zope.component
+import zope.configuration.xmlconfig
+import zope.size
+
+
+class ZCMLTest(unittest.TestCase):
+
+    def test_configure_zcml_should_be_loadable(self):
+        try:
+            zope.configuration.xmlconfig.XMLConfig(
+                'configure.zcml', zope.size)()
+        except Exception, e:
+            self.fail(e)
+
+    def test_configure_should_register_n_components(self):
+        gsm = zope.component.getGlobalSiteManager()
+        u_count = len(list(gsm.registeredUtilities()))
+        a_count = len(list(gsm.registeredAdapters()))
+        s_count = len(list(gsm.registeredSubscriptionAdapters()))
+        h_count = len(list(gsm.registeredHandlers()))
+        zope.configuration.xmlconfig.XMLConfig(
+            'configure.zcml', zope.size)()
+        self.assertEqual(u_count + 8, len(list(gsm.registeredUtilities())))
+        self.assertEqual(a_count + 1, len(list(gsm.registeredAdapters())))
+        self.assertEqual(
+            s_count, len(list(gsm.registeredSubscriptionAdapters())))
+        self.assertEqual(h_count, len(list(gsm.registeredHandlers())))
 
 
 class DummyObject(object):

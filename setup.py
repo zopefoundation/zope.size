@@ -37,6 +37,12 @@ setup(name='zope.size',
       package_dir = {'': 'src'},
       namespace_packages=['zope'],
       tests_require = [],
+      extras_require=dict(
+          zcml=[
+            'zope.component[zcml]',
+            'zope.configuration',
+            'zope.security[zcml]',
+            ]),
       install_requires=['setuptools',
                         'zope.interface',
                         'zope.i18nmessageid'],
