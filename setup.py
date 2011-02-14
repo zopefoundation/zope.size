@@ -1,6 +1,6 @@
 ##############################################################################
 #
-# Copyright (c) 2006 Zope Foundation and Contributors.
+# Copyright (c) 2006, 2011 Zope Foundation and Contributors.
 # All Rights Reserved.
 #
 # This software is subject to the provisions of the Zope Public License,
@@ -19,15 +19,14 @@
 """Setup for zope.size package
 """
 
-import os
-
 from setuptools import setup, find_packages
 
 setup(name='zope.size',
-      version = '3.5.0dev',
+      version='3.5.0dev',
       url='http://pypi.python.org/pypi/zope.size',
       license='ZPL 2.1',
-      description='Interfaces and simple adapter that give the size of an object',
+      description=\
+          'Interfaces and simple adapter that give the size of an object',
       author='Zope Foundation and Contributors',
       author_email='zope-dev@zope.org',
       long_description=\

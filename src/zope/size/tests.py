@@ -1,6 +1,6 @@
 ##############################################################################
 #
-# Copyright (c) 2001, 2002 Zope Foundation and Contributors.
+# Copyright (c) 2001, 2002, 2011 Zope Foundation and Contributors.
 # All Rights Reserved.
 #
 # This software is subject to the provisions of the Zope Public License,
@@ -16,6 +16,7 @@
 import unittest
 from zope.size.interfaces import ISized
 
+
 class DummyObject(object):
 
     def __init__(self, size):
@@ -23,6 +24,7 @@ class DummyObject(object):
 
     def getSize(self):
         return self._size
+
 
 class Test(unittest.TestCase):
 
@@ -80,10 +82,3 @@ class Test(unittest.TestCase):
         self.assertEqual(byteDisplay(2048).mapping, {'size': '2'})
         self.assertEqual(byteDisplay(2000000), u'${size} MB')
         self.assertEqual(byteDisplay(2000000).mapping, {'size': '1.91'})
-
-def test_suite():
-    loader = unittest.TestLoader()
-    return loader.loadTestsFromTestCase(Test)
-
-if __name__=='__main__':
-    unittest.TextTestRunner().run(test_suite())
