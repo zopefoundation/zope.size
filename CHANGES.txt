@@ -2,7 +2,7 @@
 CHANGES
 =======
 
-3.5.0 (unreleased)
+3.5.0 (2011-11-29)
 ------------------
 
 - Include zcml dependencies in configure.zcml, require the necessary packages
