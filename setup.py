@@ -22,7 +22,7 @@
 from setuptools import setup, find_packages
 
 setup(name='zope.size',
-      version='3.5.1dev',
+      version='4.0.0dev',
       url='http://pypi.python.org/pypi/zope.size',
       license='ZPL 2.1',
       description=\
@@ -33,6 +33,19 @@ setup(name='zope.size',
           open('README.txt').read() + \
           '\n\n' + \
           open('CHANGES.txt').read(),
+      classifiers=[
+        'Development Status :: 5 - Production/Stable',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: Zope Public License',
+        'Programming Language :: Python',
+        "Programming Language :: Python :: 2",
+        "Programming Language :: Python :: 2.6",
+        "Programming Language :: Python :: 2.7",
+        'Natural Language :: English',
+        'Operating System :: OS Independent',
+        'Topic :: Internet :: WWW/HTTP',
+        'Topic :: Software Development',
+        ],
       packages=find_packages('src'),
       package_dir = {'': 'src'},
       namespace_packages=['zope'],

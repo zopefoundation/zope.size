@@ -13,16 +13,16 @@
 ##############################################################################
 """Adapters that give the size of an object.
 """
-from zope.interface import implements
+from zope.interface import implementer
 from zope.size.interfaces import ISized
 from zope.i18nmessageid import MessageFactory
 _ = MessageFactory('zope')
 
+@implementer(ISized)
 class DefaultSized(object):
     """
     A default ISized adapter
     """
-    implements(ISized)
 
     def __init__(self, obj):
         try:
