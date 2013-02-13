@@ -15,9 +15,13 @@
 """
 import unittest
 from zope.size.interfaces import ISized
-import zope.component
-import zope.configuration.xmlconfig
 import zope.size
+
+try:
+    import zope.component
+    import zope.configuration.xmlconfig
+except:
+    pass
 
 
 class ZCMLTest(unittest.TestCase):
@@ -109,3 +113,14 @@ class Test(unittest.TestCase):
         self.assertEqual(byteDisplay(2048).mapping, {'size': '2'})
         self.assertEqual(byteDisplay(2000000), u'${size} MB')
         self.assertEqual(byteDisplay(2000000).mapping, {'size': '1.91'})
+
+
+def test_suite():
+    tests = [Test]
+    try:
+        import zope.configuration
+        tests.append(ZCMLTest)
+    except:
+        pass
+
+    return unittest.TestSuite([unittest.makeSuite(cls) for cls in tests])
