@@ -26,7 +26,7 @@ def read(*rnames):
         return f.read()
 
 setup(name='zope.size',
-      version='4.1.0',
+      version='4.1.1.dev0',
       url='http://pypi.python.org/pypi/zope.size',
       license='ZPL 2.1',
       description=\
