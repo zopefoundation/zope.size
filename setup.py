@@ -26,7 +26,7 @@ def read(*rnames):
         return f.read()
 
 setup(name='zope.size',
-      version='4.0.2.dev0',
+      version='4.1.0.dev0',
       url='http://pypi.python.org/pypi/zope.size',
       license='ZPL 2.1',
       description=\
@@ -45,6 +45,7 @@ setup(name='zope.size',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy',
         'Natural Language :: English',
