@@ -1,11 +1,10 @@
-=======
-CHANGES
+Changes
 =======
 
 4.0.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add support for testing on Travis.
 
 
 4.0.1 (2013-03-08)
@@ -17,14 +16,14 @@ CHANGES
 4.0.0 (2013-02-13)
 ------------------
 
-- Replaced deprecated ``zope.interface.implements`` usage with equivalent
+- Replace deprecated ``zope.interface.implements`` usage with equivalent
   ``zope.interface.implementer`` decorator.
 
-- Dropped support for Python 2.4 and 2.5.
+- Drop support for Python 2.4 and 2.5.
 
-- Added support for Python 3.2 and 3.3.
+- Add support for Python 3.2 and 3.3.
 
-- Conditionally disabled tests that require ``zope.configuration`` and 
+- Conditionally disable tests that require ``zope.configuration`` and 
   ``zope.security``.
 
 
@@ -37,13 +36,13 @@ CHANGES
 3.4.1 (2009-09-10)
 ------------------
 
-- Added support to bootstrap on Jython.
+- Add support for bootstrapping on Jython.
 
-- Added docstrings
+- Add docstrings.
 
 - Beautify package's README and include CHANGES into the description.
 
-- Changed package's url to PyPI instead of Subversion.
+- Change package's url to PyPI instead of Subversion.
 
 3.4.0 (2006-09-29)
 ------------------

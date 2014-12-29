@@ -18,8 +18,12 @@
 ##############################################################################
 """Setup for zope.size package
 """
-
+import os
 from setuptools import setup, find_packages
+
+def read(*rnames):
+    with open(os.path.join(os.path.dirname(__file__), *rnames)) as f:
+        return f.read()
 
 setup(name='zope.size',
       version='4.0.2.dev0',
@@ -29,10 +33,7 @@ setup(name='zope.size',
           'Interfaces and simple adapter that give the size of an object',
       author='Zope Foundation and Contributors',
       author_email='zope-dev@zope.org',
-      long_description=\
-          open('README.txt').read() + \
-          '\n\n' + \
-          open('CHANGES.txt').read(),
+      long_description=read('README.rst') + '\n\n' + read('CHANGES.rst'),
       classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
