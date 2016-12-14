@@ -16,13 +16,22 @@
 
 from zope.interface import Interface
 
-# basic units:
-#   'byte'
-#   'item'  for example, number of subobjects for a folder
-#   None    for unsized things
-#   'line'  for source-code like things
 
 class ISized(Interface):
+    """
+    An object that is sized in some unit.
+
+    Basic units:
+
+    - 'byte'
+
+    - 'item'  for example, number of subobjects for a folder
+
+    - None    for unsized things
+
+    - 'line'  for source-code like things
+
+    """
 
     def sizeForSorting():
         """Returns a tuple (basic_unit, amount)

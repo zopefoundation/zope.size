@@ -26,8 +26,8 @@ def read(*rnames):
         return f.read()
 
 setup(name='zope.size',
-      version='4.2.0.dev0',
-      url='http://pypi.python.org/pypi/zope.size',
+      version=read('version.txt'),
+      url='http://zopesize.readthedocs.io',
       license='ZPL 2.1',
       description=\
           'Interfaces and simple adapter that give the size of an object',
