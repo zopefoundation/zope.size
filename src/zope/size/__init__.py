@@ -21,7 +21,9 @@ _ = MessageFactory('zope')
 @implementer(ISized)
 class DefaultSized(object):
     """
-    A default ISized adapter
+    A default :class:`zope.size.interfaces.ISized` adapter
+    producing bytes for any object that has a ``getSize`` method and
+    (None, None) for all other objects.
     """
 
     def __init__(self, obj):
