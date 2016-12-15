@@ -48,7 +48,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'zope.size'
-copyright = '2015, Zope Foundation and Contributors'
+copyright = '2016, Zope Foundation and Contributors'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -249,7 +249,8 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 'zopesize', 'zope.size Documentation',
-   'Zope Foundation and Contributors', 'zopesize', 'One line description of project.',
+   'Zope Foundation and Contributors', 'zopesize',
+   'Simple interface and default adapter for retrieving the size of an object for displaying or sorting.',
    'Miscellaneous'),
 ]
 
