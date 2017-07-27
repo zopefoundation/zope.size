@@ -4,9 +4,9 @@ Changes
 4.2.0 (unreleased)
 ------------------
 
-- Add support for Python 3.5.
+- Add support for Python 3.5 and 3.6.
 
-- Drop support for Python 2.6 and 3.2.
+- Drop support for Python 2.6, 3.2 and 3.3.
 
 
 4.1.0 (2014-12-29)
@@ -35,7 +35,7 @@ Changes
 
 - Add support for Python 3.2 and 3.3.
 
-- Conditionally disable tests that require ``zope.configuration`` and 
+- Conditionally disable tests that require ``zope.configuration`` and
   ``zope.security``.
 
 
