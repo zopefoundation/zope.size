@@ -18,11 +18,8 @@ import unittest
 from zope.size.interfaces import ISized
 import zope.size
 
-try:
-    import zope.component
-    import zope.configuration.xmlconfig
-except:
-    pass
+import zope.component
+import zope.configuration.xmlconfig
 
 
 class ZCMLTest(unittest.TestCase):
@@ -31,7 +28,7 @@ class ZCMLTest(unittest.TestCase):
         try:
             zope.configuration.xmlconfig.XMLConfig(
                 'configure.zcml', zope.size)()
-        except Exception as e:
+        except Exception as e: # pragma: no cover
             self.fail(e)
 
     def test_configure_should_register_n_components(self):
@@ -117,11 +114,4 @@ class Test(unittest.TestCase):
 
 
 def test_suite():
-    tests = [Test]
-    try:
-        import zope.configuration
-        tests.append(ZCMLTest)
-    except:
-        pass
-
-    return unittest.TestSuite([unittest.makeSuite(cls) for cls in tests])
+    return unittest.defaultTestLoader.loadTestsFromName(__name__)
