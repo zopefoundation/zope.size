@@ -65,8 +65,6 @@ setup(name='zope.size',
       packages=find_packages('src'),
       package_dir={'': 'src'},
       namespace_packages=['zope'],
-      tests_require=TESTS_REQUIRE,
-      test_suite='zope.size.tests.test_suite',
       extras_require={
           'zcml': ZCML_REQUIRES,
           'test': TESTS_REQUIRE,
