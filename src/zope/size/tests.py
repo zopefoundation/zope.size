@@ -112,6 +112,3 @@ class Test(unittest.TestCase):
         self.assertEqual(byteDisplay(2000000), '${size} MB')
         self.assertEqual(byteDisplay(2000000).mapping, {'size': '1.91'})
 
-
-def test_suite():
-    return unittest.defaultTestLoader.loadTestsFromName(__name__)
