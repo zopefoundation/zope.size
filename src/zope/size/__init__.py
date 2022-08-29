@@ -21,6 +21,7 @@ from zope.size.interfaces import ISized
 
 _ = MessageFactory('zope')
 
+
 @implementer(ISized)
 class DefaultSized(object):
     """
@@ -47,6 +48,7 @@ class DefaultSized(object):
         if units == 'byte':
             return byteDisplay(size)
         return _('not-available', 'n/a')
+
 
 def byteDisplay(size):
     """
