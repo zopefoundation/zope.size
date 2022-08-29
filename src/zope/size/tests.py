@@ -14,12 +14,14 @@
 """Test ISized Adapter
 """
 from __future__ import unicode_literals
+
 import unittest
-from zope.size.interfaces import ISized
-import zope.size
 
 import zope.component
 import zope.configuration.xmlconfig
+
+import zope.size
+from zope.size.interfaces import ISized
 
 
 class ZCMLTest(unittest.TestCase):
