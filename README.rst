@@ -10,8 +10,8 @@
         :target: https://pypi.org/project/zope.size/
         :alt: Supported Python versions
 
-.. image:: https://travis-ci.com/zopefoundation/zope.size.svg?branch=master
-        :target: https://travis-ci.com/zopefoundation/zope.size
+.. image:: https://github.com/zopefoundation/zope.size/actions/workflows/tests.yml/badge.svg
+        :target: https://github.com/zopefoundation/zope.size/actions/workflows/tests.yml
 
 .. image:: https://readthedocs.org/projects/zopesize/badge/?version=latest
         :target: https://zopesize.readthedocs.io/en/latest/
