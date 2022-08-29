@@ -13,9 +13,12 @@
 ##############################################################################
 """Adapters that give the size of an object.
 """
-from zope.interface import implementer
-from zope.size.interfaces import ISized
 from zope.i18nmessageid import MessageFactory
+from zope.interface import implementer
+
+from zope.size.interfaces import ISized
+
+
 _ = MessageFactory('zope')
 
 @implementer(ISized)
