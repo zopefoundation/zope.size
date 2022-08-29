@@ -30,7 +30,7 @@ class ZCMLTest(unittest.TestCase):
         try:
             zope.configuration.xmlconfig.XMLConfig(
                 'configure.zcml', zope.size)()
-        except Exception as e: # pragma: no cover
+        except Exception as e:  # pragma: no cover
             self.fail(e)
 
     def test_configure_should_register_n_components(self):
@@ -113,4 +113,3 @@ class Test(unittest.TestCase):
         self.assertEqual(byteDisplay(2048).mapping, {'size': '2'})
         self.assertEqual(byteDisplay(2000000), '${size} MB')
         self.assertEqual(byteDisplay(2000000).mapping, {'size': '1.91'})
-
