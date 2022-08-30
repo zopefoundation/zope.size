@@ -1,7 +1,7 @@
 Changes
 =======
 
-4.4 (unreleased)
+4.4 (2022-08-30)
 ----------------
 
 - Drop support for Python 3.4.
