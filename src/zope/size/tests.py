@@ -13,7 +13,6 @@
 ##############################################################################
 """Test ISized Adapter
 """
-from __future__ import unicode_literals
 
 import unittest
 
@@ -48,7 +47,7 @@ class ZCMLTest(unittest.TestCase):
         self.assertEqual(h_count, len(list(gsm.registeredHandlers())))
 
 
-class DummyObject(object):
+class DummyObject:
 
     def __init__(self, size):
         self._size = size

@@ -23,7 +23,7 @@ _ = MessageFactory('zope')
 
 
 @implementer(ISized)
-class DefaultSized(object):
+class DefaultSized:
     """
     A default :class:`zope.size.interfaces.ISized` adapter
     producing bytes for any object that has a ``getSize`` method and
