@@ -41,7 +41,7 @@ setup(
     name='zope.size',
     version=read('version.txt').strip(),
     url='http://github.com/zopefoundation/zope.size',
-    license='ZPL 2.1',
+    license='ZPL-2.1',
     description='Interfaces and simple adapter that give the size of an'
                 ' object',
     keywords="size display human bytes",
@@ -54,11 +54,11 @@ setup(
         'License :: OSI Approved :: Zope Public License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy',
         'Natural Language :: English',
@@ -70,7 +70,7 @@ setup(
     package_dir={
         '': 'src'},
     namespace_packages=['zope'],
-    python_requires='>=3.7',
+    python_requires='>=3.9',
     extras_require={
         'zcml': ZCML_REQUIRES,
         'test': TESTS_REQUIRE,
