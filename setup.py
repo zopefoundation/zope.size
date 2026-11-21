@@ -38,7 +38,7 @@ TESTS_REQUIRE = ZCML_REQUIRES
 
 setup(
     name='zope.size',
-    version=read('version.txt').strip(),
+    version='6.1.dev0',
     url='http://github.com/zopefoundation/zope.size',
     license='ZPL-2.1',
     description='Interfaces and simple adapter that give the size of an'
