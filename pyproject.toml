@@ -9,7 +9,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zope.size"
-version = "6.1"
+version = "6.2.dev0"
 description = "Interfaces and simple adapter that give the size of an object"
 license = "ZPL-2.1"
 classifiers = [
